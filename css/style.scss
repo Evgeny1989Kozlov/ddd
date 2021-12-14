@@ -1,0 +1,139 @@
+@import "_mixins";
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@font-face {
+   font-family: "Helvetica Neue";
+   src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format("woff2"),
+      url("../fonts/HelveticaNeue-CondensedBlack.woff") format("woff");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Helvetica Neue";
+   src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "HelveticaNeueCyr";
+   src: url("HelveticaNeueCyr-Bold.woff2") format("woff2"), url("HelveticaNeueCyr-Bold.woff") format("woff");
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+@import "_null";
+
+body {
+   line-height: 1;
+   color: #fff;
+   background-color: #333;
+   font-family: "Helvetica Neue";
+   font-weight: 400;
+
+   color: #ffffff;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+/* ------------------------------ */
+
+// Основной цвет
+$main: green;
+
+// !............................
+.main-page {
+   // .main-page__image
+
+   &__image {
+      // display: flex;
+      // justify-content: center;
+      animation-name: love;
+      animation-duration: 2s;
+      padding: 120px 10px;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+   }
+}
+
+.main-page {
+   // .main-page__ima
+
+   &__ima {
+      img {
+         position: absolute;
+         top: 23%;
+         left: 9%;
+         transform: scale(0.6);
+      }
+   }
+}
+
+.main-page {
+   max-width: 1000px;
+   margin: 0 auto;
+
+   &__eee {
+      position: relative;
+      margin-top: -300px;
+   }
+
+   // .main-page__image
+
+   &__image {
+      // display: none;
+   }
+
+   // .main-page__imag
+
+   &__imag {
+      position: relative;
+      padding-top: 100%;
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+}
+
+@keyframes love {
+   0% {
+      /* css свойства */
+
+      transform: scale(0.8);
+   }
+   50% {
+      /* css свойства */
+      transform: scale(1.3);
+      /* background: url("../img/shtora-back.png") 0px 0px no-repeat; */
+   }
+
+   100% {
+      /* css свойства */
+      transform: scale(0.8);
+      /* background: url("../img/shtora-back.png") 0px 0px no-repeat; */
+   }
+}
+
+.main-page .main-page__eee {
+   display: none;
+}
+
+.tole {
+   background: #0978;
+}
